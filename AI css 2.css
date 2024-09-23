@@ -1,0 +1,162 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+#quiz-container {
+    display: none;
+}
+
+#quiz-results {
+    display: none;
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 1em;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #career-coaching {
+        padding: 1em;
+    }
+    #take-quiz-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #quiz-container {
+        padding: 1em;
+    }
+    #quiz-questions {
+        padding: 0;
+    }
+    #quiz-questions li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    #submit-quiz-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Tablet Devices (min-width: 769px) and (max-width: 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #career-coaching {
+        padding: 2em;
+    }
+    #take-quiz-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    #quiz-container {
+        padding: 2em;
+    }
+    #quiz-questions {
+        padding: 0;
+    }
+    #quiz-questions li {
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+    #submit-quiz-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Desktop Devices (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+    #career-coaching {
+        padding: 2em;
+    }
+    #take-quiz-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    #quiz-container {
+        padding: 2em;
+    }
+    #quiz-questions {
+        padding: 0;
+    }
+    #quiz-questions li {
+        padding: 15px;
+        border-bottom: 1px solid #463232;
+    }
+    #submit-quiz-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
